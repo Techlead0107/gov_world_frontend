@@ -1,0 +1,34 @@
+.slideshow {
+    overflow: hidden;
+    height: 120px;
+    position: relative;
+    max-width: 450px;
+}
+  
+.slide {
+    position: absolute;
+    top: 0;
+    left: 100%;
+    width: 100%;
+    height: 100%;    
+    opacity: 0;
+    transition: transform 0.9s, opacity 0.4s; 
+}
+  
+.active {
+    opacity: 1;
+    transform: translateX(-100%); 
+    
+}
+
+@media (max-width: 991px) {
+    .slideshow {
+        height: 80px;
+    }    
+}
+
+@media (max-width: 767px) {
+    .slideshow {
+        height: 100px;
+    }     
+}

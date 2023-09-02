@@ -1,0 +1,8 @@
+{
+  "functions": {
+    "app/api/contact/route.js": {
+      "memory": 1024,
+      "maxDuration": 30
+    }
+  }
+}
