@@ -63,6 +63,17 @@ function HeroContent({ interval = 3000 }) {
                                     />
                                 ))}
                             </div>
+                            <div className={[styles.slideshow]}>
+                                {texts.map((text, index) => (
+                                    <h2
+                                        key={index}
+                                        className={`${styles.slide} ${index === currentIndex ? styles.active : ''
+                                            }`}
+                                        style={{ color: text.color }}
+                                        dangerouslySetInnerHTML={{ __html: text.content }}
+                                    />
+                                ))}
+                            </div>
 
                             <p>{t("$GOV is the ultimate governance token because it unlocks the ability to borrow stablecoins against the value of ALL other approved  DEX tokens and NFTs")}</p></Col>
                         <Col md={6}>
